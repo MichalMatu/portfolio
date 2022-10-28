@@ -31,8 +31,7 @@ a {
 header {
 
     display: grid;
-    border-style: solid;
-    border-color: red;
+
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 10px;
@@ -74,17 +73,17 @@ header h2.surname {
     font-size: 700%;
     color: var(--second-color);
     grid-area: 3 / 2 / 4 / 2;
-    
+
 
 }
 
 
-header a.web  {
+header a.web {
     justify-self: center;
     grid-area: 5 / 1 / 6 / 2;
 }
 
-header a.iot  {
+header a.iot {
     justify-self: center;
     grid-area: 5 / 2 / 6 / 3;
 }
@@ -101,22 +100,21 @@ header a.pho {
 
 
 
-.web_design  {
+.web_design {
 
     display: grid;
-    border-style: solid;
-    border-color: red;
+
     grid-gap: 10px;
     width: 100vw;
     height: 100vh;
     background-image: url(../img/bg2.jpg);
     background-size: cover;
 
-    grid-template-areas: 
-    " col1 col2 col2 col3 "
-    " col4 col5 col6 col7"
-    " col4 col8 col9 col7 "
-    " col10 col11 col11 col12";
+    grid-template-areas:
+        " col1 col2 col2 col3 "
+        " col4 col5 col6 col7"
+        " col4 col8 col9 col7 "
+        " col10 col11 col11 col12";
 
     grid-template-rows: 10% 40% 40% 10%;
     grid-template-columns: 15% 35% 35% 15%;
@@ -125,10 +123,62 @@ header a.pho {
 
 
 .wd1 {
+    display: flex;
     grid-area: col2;
+    font-size: 400%;
+    color: var(--first-color);
+    justify-content: center;
+}
 
+.nav_top {
+    display: flex;
+    grid-area: col3;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
 
 }
+
+.nav_bottom {
+    display: flex;
+    grid-area: col7;
+    justify-content: center;
+    align-items: flex-start ;
+    font-size: 150%;
+}
+
+
+.website_1 {
+    display: flex;
+    grid-area: col5;
+    justify-content: center;
+}
+
+.website_2 {
+    display: flex;
+    grid-area: col6;
+    justify-content: center;
+}
+
+.website_3 {
+    display: flex;
+    grid-area: col8;
+    justify-content: center;
+}
+
+.website_4 {
+    display: flex;
+    grid-area: col9;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -140,31 +190,52 @@ header a.pho {
 .iot_design {
 
     display: grid;
-    border-style: solid;
-    border-color: red;
+
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/bg2.jpg);
+    background-image: url(../img/bg3.jpg);
     background-size: cover;
 
 }
 
 
 
-.photography  {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.photography {
 
     display: grid;
-    border-style: solid;
-    border-color: red;
+
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/bg2.jpg);
+    background-image: url(../img/bg4.jpg);
     background-size: cover;
 
 }
@@ -183,13 +254,14 @@ header a.pho {
 
 footer {
     display: grid;
-    border-style: solid;
-    border-color: red;
+
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-gap: 10px;
     width: 100vw;
     height: 100vh;
+    background-image: url(../img/bg5.jpg);
+    background-size: cover;
 
 
 }
