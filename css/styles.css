@@ -1,11 +1,8 @@
 :root {
-    --bgcolor1: rgb(167, 24, 143) ;
+    --bgcolor1: rgb(167, 24, 143);
     --bgcolor2: rgb(29, 17, 139);
-    --bgcolorcards1: rgb(255, 255, 255); 
-    --bgcolorcards2: rgb(255, 234, 234); 
-
-
-
+    --bgcolorcards1: rgb(255, 255, 255);
+    --bgcolorcards2: rgb(255, 234, 234);
 }
 
 * {
@@ -18,49 +15,83 @@
 a {
     text-decoration: none;
     color: black;
+
 }
+
+p { text-indent: 20px; }
 
 body {
-overflow: hidden;
-height: 100vh;
-background: linear-gradient(45deg, var(--bgcolor1), var(--bgcolor2));
-font-size: larger;
-
-
+    height: 100vh;
+    width: 100%;
 }
 
-.cards {
+
+div {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    grid-gap: 2rem;
-    padding: 5%;
+    grid-template-areas:
+        "header header header"
+        "menu main rside"
+        "footer footer footer";
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 5%;
+    border: 10%;
 }
 
-article:hover {
-    font-weight: lighter;
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+nav {
+    display: flex;
+    grid-area: menu;
+    flex-direction: row;
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 50%;
+    left: -8%;
+
 
 }
 
 
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+    row-gap: 5%;
 
-.cards>article {
-    background: linear-gradient(180deg, var(--bgcolorcards1), var(--bgcolorcards2));
-    padding: 1.5rem;
-    border-radius: 1rem;
+}
+
+
+aside {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 5px 5px 5px rgb(142, 142, 142);
-    
 }
+
+
+
+
+
+
+
+
+
 
 
 
 
 @media screen and (max-width: 800px) {
     body {
-      background: black;
-      font-size: medium;
+        background: black;
+        font-size: medium;
     }
-  }
+}
