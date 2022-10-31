@@ -30,7 +30,7 @@ div {
     display: grid;
     grid-template-areas:
         "header header header"
-        "menu main rside"
+        "menu main1 rside"
         "footer footer footer";
     grid-template-columns: 1fr 4fr 1fr;
     gap: 5%;
@@ -52,14 +52,15 @@ nav {
     transform: rotate(-90deg);
     position: fixed;
     top: 50%;
-    left: -8%;
+    left: -10%;
+    background-color: aliceblue;
 
 
 }
 
 
 main {
-    grid-area: main;
+    grid-area: main1;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     justify-content: center;
@@ -89,9 +90,25 @@ aside {
 
 
 
-@media screen and (max-width: 800px) {
-    body {
-        background: black;
-        font-size: medium;
+@media screen and (max-width: 1860px) {
+    nav {
+        top: 5%;
+        left: 35%;
+        transform: rotate(0deg);
+        
     }
 }
+
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-area: main1;
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-content: center;
+        align-items: center;
+        column-gap: 5%;
+        row-gap: 5%;
+    
+}
+
