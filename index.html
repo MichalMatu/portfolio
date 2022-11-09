@@ -12,9 +12,12 @@
 <body>
 
     <div>
+        <!-- welcome tag -->
         <header>
             <h1>Hi I'm Michal </h1>
         </header>
+
+        <!-- navigation menu -->
         <nav>
             <h3 class="shadow"><a href="#about_me">#about me</a>&nbsp;&nbsp;</h3>
 
@@ -25,10 +28,11 @@
 
 
         </nav>
-
+<!-- main website content -->
         <main>
             <aside>
                 <pre>
+                    <!-- about me section -->
                 <h3 id="about_me">
                     
 
@@ -54,6 +58,7 @@
 
             <aside>
                 <pre>
+                    <!-- my projects -->
                 <h3 id="projects">
                    
 
@@ -74,6 +79,7 @@
             </figure>
             <aside>
                 <pre>
+                    <!-- section about my photography -->
                 <h3 id="photography">
                     
 
@@ -112,6 +118,7 @@
 
 
             <aside>
+                <!-- section where you can download my cv -->
                 <h3 id="cv">#cv</h3>
                 <p>There is a link for my <a href="">cv</a></p>
             </aside>
@@ -119,10 +126,39 @@
 
 
 
-            <aside>
-                <h3 id="contact">#contact me</h3>
-                <input type="text"><button type="button" onclick="alert('Thank you for your message!')">Send</button>
-            </aside>
+            
+                <!-- contact me section -->
+
+                
+                    <form>
+                  
+                      <label for="fname">Tell me your First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name...is...">
+                  
+                      <label for="lname">And your Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..is...">
+                  
+                      <label for="country">What country you form</label>
+                      <select id="country" name="country">
+                        <option value="poland">Poland</option>
+                        <option value="holland">Holland</option>
+                        <option value="denmark">Denmark</option>
+                        <option value="rest">rest of the World</option>
+                      </select>
+                  
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Tell me what do you like to do..." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                
+
+
+
+
+
+          
 
             <footer>&copy; MM : 2022</footer>
 
